@@ -1,0 +1,717 @@
+<html><head></head><body><div id="g-index-box" class="ai2html">
+	<!-- Estilos -->
+	<style media="screen,print">
+		#g-index-box,
+		#g-index-box .g-artboard {
+			margin:0 auto;
+		}
+		#g-index-box p {
+			margin:0;
+		}
+		#g-index-box .g-aiAbs {
+			position:absolute;
+		}
+		#g-index-box .g-aiImg {
+			position:absolute;
+			top:0;
+			display:block;
+			width:100% !important;
+		}
+		#g-index-box .g-aiSymbol {
+			position: absolute;
+			box-sizing: border-box;
+		}
+		#g-index-box .g-aiPointText p { white-space: nowrap; }
+		#g-index-mobile {
+			position:relative;
+			overflow:hidden;
+		}
+	
+		span {
+			font-weight: bolder;	
+		}
+	
+		/* Fonts */
+		
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900ital@1&display=swap');
+	
+		/* movil-tablet style */
+	
+		#g-index-mobile p {
+			font-family:roboto,helvetica,sans-serif;
+			line-height:16px;
+			filter:alpha(opacity=100);
+			-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity:1;
+			padding-top:0;
+			letter-spacing:0.002em;
+			font-size:12px;
+			text-align:left;
+			color:rgb(41,34,50);
+			text-transform:none;
+			padding-bottom:0;
+			mix-blend-mode:normal;
+			font-style:normal;
+			height:auto;
+			position:static;
+		}
+		#movil-tablet.g-tag p {
+			font-weight:700;
+			font-style:italic;
+			line-height:18px;
+			height:18px;
+			letter-spacing:0.01em;
+			text-align:center;
+			color:rgb(255,255,255);
+		}
+		#movil-tablet.g-titulo-general p {
+			line-height:32px;
+			font-size:28px;
+			font-weight:700;
+			text-align:center;
+		}
+		#movil-tablet.g-titulos p {
+			line-height:18px;
+			font-size:16px;
+			text-align:center;
+			font-weight:500;
+		}
+	
+		#movil-tablet.g-titulos-izquierda p {
+			line-height:18px;
+			font-weight:700;
+			font-size:16px;
+			text-align:right;
+		}
+		#movil-tablet.g-titulos-derecha p {
+			line-height:18px;
+			font-weight:700;
+			font-size:16px;
+			text-align:left;
+		}
+		#movil-tablet.g-parrafo-d p {
+			padding-top:16px;
+		}
+		#movil-tablet.g-parrafo-i p {
+			padding-top:16px;
+			text-align:right;
+		}
+		#movil-tablet.g-subtitulos p {
+			line-height:18px;
+			height:18px;
+			letter-spacing:0.024em;
+			font-size:10px;
+			font-weight: 700;
+			text-align:center;
+		}
+		#movil-tablet.g-numeros p {
+			line-height:18px;
+			height:18px;
+			padding-top:16px;
+			font-size:24px;
+			text-align:center;
+		}
+		#movil-tablet.g-parrafo p {
+			padding-top:16px;
+			text-align:center;
+		}
+		
+		#g-index-tablet {
+			position:relative;
+			overflow:hidden;
+		}
+		#g-index-tablet p {
+			font-family:roboto,helvetica,sans-serif;
+			line-height:16px;
+			filter:alpha(opacity=100);
+			-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity:1;
+			padding-top:0;
+			letter-spacing:0.002em;
+			font-size:12px;
+			text-align:left;
+			color:rgb(41,34,50);
+			text-transform:none;
+			padding-bottom:0;
+			mix-blend-mode:normal;
+			font-style:normal;
+			height:auto;
+			position:static;
+		}
+		#movil-tablet.g-asterisco p {
+			font-size:12px;
+			font-weight:400;
+			text-align:left;
+		}
+	
+		#movil-tablet.g-seccion p {
+			font-size:16px;
+			line-height:18px;
+			font-weight:700;
+			text-align:center;
+		}
+		
+	/* laptop-desktop style */
+		
+		#g-index-laptop, #g-index-desktop {
+			position:relative;
+			overflow:hidden;
+		}
+		#g-index-laptop p {
+			font-family:roboto,helvetica,sans-serif;
+			line-height:18px;
+			filter:alpha(opacity=100);
+			-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity:1;
+			padding-top:0;
+			letter-spacing:0.002em;
+			font-size:14px;
+			text-align:left;
+			color:rgb(41,34,50);
+			text-transform:none;
+			padding-bottom:0;
+			mix-blend-mode:normal;
+			font-style:normal;
+			height:auto;
+			position:static;
+		}
+		#g-index-desktop p {
+			font-family:"Roboto",sans-serif;
+			line-height:18px;
+			filter:alpha(opacity=100);
+			-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity:1;
+			padding-top:0;
+			letter-spacing:0.002em;
+			font-size:14px;
+			text-align:left;
+			color:rgb(41,34,50);
+			text-transform:none;
+			padding-bottom:0;
+			mix-blend-mode:normal;
+			font-style:normal;
+			height:auto;
+			position:static;
+		}
+		#laptop-desktop.g-tag p {
+			font-weight:700;
+			font-style:italic;
+			height:18px;
+			letter-spacing:0.01em;
+			font-size:20px;
+			text-align:center;
+			color:rgb(255,255,255);
+		}
+		#laptop-desktop.g-titulo-general p {
+			line-height:42px;
+			letter-spacing:0.01em;
+			font-size:38px;
+			font-weight:700;
+			text-align:center;
+		}
+		#laptop-desktop.g-titulos p {
+			font-size:16px;
+			text-align:center;
+			font-weight:500;
+		}
+		#laptop-desktop.g-seccion p {
+			line-height:26px;
+			letter-spacing:0.01em;
+			font-size:24px;
+			font-weight: 700;
+			text-align:center;
+		}
+		#laptop-desktop.g-subtitulos p {
+			height:18px;
+			letter-spacing:0.024em;
+			font-size:10px;
+			text-align:center;
+			font-weight:700;
+		}
+		#laptop-desktop.g-numeros p {
+			height:18px;
+			padding-top:16px;
+			font-size:24px;
+			text-align:center;
+		}
+		#laptop-desktop.g-parrafo p {
+			padding-top:16px;
+			text-align:center;
+		}
+		#laptop-desktop.g-parrafo-d p {
+			text-align:left;
+		}
+			#laptop-desktop.g-parrafo-i p {
+			text-align:right;
+		}
+		#laptop-desktop.g-titulos-izquierda p {
+			font-size:16px;
+			font-weight:700;
+			text-align:right;
+		}
+		#g-index-desktop .g-pstyle9 {
+			font-size:16px;
+		}
+		
+		#laptop-desktop.g-asterisco p {
+			font-size:12px;
+			font-weight:400;
+			text-align:left;
+		}
+		
+		#laptop-desktop.g-titulos-derecha p {
+			font-size:16px;
+			font-weight: 700;
+			text-align:left;
+		}
+		/* Media Queries */
+		#g-index-mobile {
+		display:block;
+		}	
+		#g-index-tablet,
+		#g-index-laptop,
+		#g-index-desktop {
+		display:none;}
+	
+		@media (min-width:481px){
+			#g-index-mobile,
+			#g-index-laptop,
+			#g-index-desktop {
+				display: none;
+			}
+			#g-index-tablet {
+				display:block;
+			}
+		}	
+		@media (min-width:769px) {
+			#g-index-mobile,
+			#g-index-tablet,
+			#g-index-desktop {
+				display: none;
+			}
+			
+			#g-index-laptop {
+				display:block;
+			}
+		}
+		@media (min-width:1024px) {
+			#g-index-mobile,
+			#g-index-tablet,
+			#g-index-laptop{
+				display: none;
+				}
+			#g-index-desktop {
+				display:block;
+				}
+		}
+		
+	</style>
+
+	<!-- Artboard: mobile -->
+	<div id="g-index-mobile" class="g-artboard" style="max-width: 320px;max-height: 3140px" data-aspect-ratio="0.102" data-min-width="0" data-max-width="479">
+<div style="padding: 0 0 981.3668% 0;"></div>
+		<img id="g-index-mobile-img" class="g-aiImg" alt="" src="img/index-mobile.jpg">
+		<div id="movil-tablet" class="g-tag g-aiAbs g-aiPointText" style="top:0.3744%;margin-top:-9.8px;left:14.37%;margin-left:-42px;width:84px;">
+			<p>#FECYTedu</p>
+		</div>
+		<div id="movil-tablet" class="g-titulo-general g-aiAbs" style="top:1.3374%;left:49.9365%;margin-left:-50%;width:100%;">
+			<p>CÃ³mo fomentar el aprendizaje basado en proyectos (ABP) de forma efectiva</p>
+		</div>
+		<div id="movil-tablet" class="g-titulos g-aiAbs" style="top:6.7508%;left:49.8397%;margin-left:-47.3437%;width:94.6875%;">
+			<p>Una experiencia de aprendizaje es ABP cuando los objetivos de aprendizaje estÃ¡n ligados al desarrollo del proyecto y el alumnado…</p>
+		</div>
+		<div id="movil-tablet" class="g-titulos g-aiAbs" style="top:14.6161%;left:49.9983%;margin-left:-35%;width:70%;">
+			<p>...se enfrenta a una pregunta vinculada a algÃºn fenÃ³meno real.</p>
+		</div>
+		<div id="movil-tablet" class="g-titulos g-aiAbs" style="top:20.4753%;left:49.9983%;margin-left:-37.5%;width:75%;">
+			<p>...realiza tareas usualmente complejas de forma colaborativa, con autonomÃ­a y poder de decisiÃ³n.</p>
+		</div>
+		<div id="movil-tablet" class="g-titulos g-aiAbs" style="top:27.6082%;left:48.5053%;margin-left:-32.8125%;width:65.625%;">
+			<p>...reflexiona e intenta responder a la cuestiÃ³n inicial.</p>
+		</div>
+		<div id="movil-tablet" class="g-titulos g-aiAbs" style="top:34.9958%;left:50.0693%;margin-left:-37.5%;width:75%;">
+			<p>...presenta sus propias conclusiones en forma de producto.</p>
+		</div>
+		<div id="movil-tablet" class="g-seccion g-aiAbs" style="top:38.3394%;left:46.9655%;margin-left:-38.75%;width:77.5%;">
+			<p>¿QuÃ© pruebas* aporta la investigaciÃ³n sobre la efectividad del ABP?</p>
+		</div>
+		<div id="movil-tablet" class="g-titulos-izquierda g-aiAbs" style="top:43.6891%;right:58.0356%;width:22.5%;">
+			<p>Lo que sabemos</p>
+		</div>
+		<div id="movil-tablet" class="g-titulos-derecha g-aiAbs" style="top:43.6891%;left:57.2498%;width:25%;">
+			<p>Lo que no sabemos... ¡aÃºn!</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo-d g-aiAbs" style="top:45.6634%;left:57.2498%;width:32.8125%;">
+			<p>No sabemos si el alumnado en desventaja se beneficia del ABP igual que el resto.</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo-d g-aiAbs" style="top:48.8158%;left:56.9644%;width:33.125%;">
+			<p>No sabemos si existe un efecto diferente en funciÃ³n del gÃ©nero del alumnado.</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo-i g-aiAbs" style="top:51.8728%;right:58.0343%;width:38.125%;">
+			<p>Los resultados del ABP en cuanto al rendimiento acadÃ©mico son mejores en Ã¡reas lingÃ¼Ã­sticas y humanÃ­sticas que en Ã¡reas STEM.</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo-i g-aiAbs" style="top:56.4582%;right:58.0343%;width:38.125%;">
+			<p>El ABP puede mejorar el rendimiento acadÃ©mico en primaria, secundaria y educaciÃ³n superior...</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo-d g-aiAbs" style="top:56.4582%;left:56.9644%;width:33.125%;">
+			<p>…pero la investigaciÃ³n en educaciÃ³n infantil es muy incipiente.</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo-d g-aiAbs" style="top:59.77%;left:56.9644%;width:36.5625%;">
+			<p>… pero estÃ¡ por determinar en la motivaciÃ³n o adquisiciÃ³n de competencias transversales, como la creatividad o el pensamiento crÃ­tico.</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo-i g-aiAbs" style="top:59.8018%;right:58.0349%;width:37.5%;">
+			<p>La potencialidad del ABP se ha constatado en el aprendizaje de contenidos y en la satisfacciÃ³n del alumnado...</p>
+		</div>
+		<div id="movil-tablet" class="g-asterisco g-aiAbs" style="top:65.2789%;left:4.4651%;width:85.625%;">
+			<p>*La evidencia disponible es limitada; a veces mixta o contradictoria y con limitaciones metodolÃ³gicas. </p>
+		</div>
+		<div id="movil-tablet" class="g-seccion g-aiAbs" style="top:68.4632%;left:46.9655%;margin-left:-38.75%;width:77.5%;">
+			<p>La efectividad del ABP depende fuertemente de sus condiciones de aplicaciÃ³n</p>
+		</div>
+		<div id="movil-tablet" class="g-subtitulos g-aiAbs g-aiPointText" style="top:70.8716%;margin-top:-9.6px;left:48.653%;margin-left:-81px;width:162px;">
+			<p>ALGUNOS ASPECTOS CLAVE:</p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:72.3964%;margin-top:-26.5px;left:47.1883%;margin-left:-17.5px;width:35px;">
+			<p>1</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo g-aiAbs" style="top:72.6665%;left:48.7483%;margin-left:-43.75%;width:87.5%;">
+			<p><span>Las experiencias de ABP con mejor resultado son intensivas, pero ocasionales y acotadas en el tiempo. </span>Ej.: mÃ¡s de 2 horas/semana durante 6-8 semanas. Tiempo para preparar y planificar, abordar las tareas, reflexionar y evaluar su aprendizaje. </p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:76.7908%;margin-top:-26.5px;left:47.1883%;margin-left:-17.5px;width:35px;">
+			<p>2</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo g-aiAbs" style="top:77.0927%;left:48.7483%;margin-left:-41.25%;width:82.5%;">
+			<p>El ABP debe complementar y ampliar la instrucciÃ³n del profesorado, no sustituirla.<span class="g-cstyle1"> </span><span class="g-cstyle1">El alumnado necesita ayuda, supervisiÃ³n y retroalimentaciÃ³n personalizada.</span></p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:80.803%;margin-top:-26.5px;left:47.1883%;margin-left:-17.5px;width:35px;">
+			<p>3</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo g-aiAbs" style="top:81.0732%;left:48.7483%;margin-left:-41.25%;width:82.5%;">
+			<p><span>El alumnado desaventajado requiere de un estrecho seguimiento, una conexiÃ³n del proyecto con aspectos de su entorno y con elementos trabajados anteriormente, coherencia curricular e integraciÃ³n interdisciplinar, y una estructuraciÃ³n del tiempo clara.</span></p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:85.8343%;margin-top:-26.5px;left:47.1883%;margin-left:-17.5px;width:35px;">
+			<p>4</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo g-aiAbs" style="top:86.1044%;left:48.7483%;margin-left:-41.25%;width:82.5%;">
+			<p>El ABP requiere de un liderazgo claro a nivel de centro que facilite el trabajo conjunto y la colaboraciÃ³n entre el profesorado. <span class="g-cstyle1">Ej. espacios compartidos entre docentes, gestionar horarios y espacios con direcciÃ³n, etc.</span></p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:90.4516%;margin-top:-26.5px;left:47.1883%;margin-left:-17.5px;width:35px;">
+			<p>5</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo g-aiAbs" style="top:90.7217%;left:48.7483%;margin-left:-41.25%;width:82.5%;">
+			<p><span>FormaciÃ³n especÃ­fica del profesorado </span>para compartir ideas clave, materiales o realizar observaciones de otras experiencias efectivas.</p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:94.1136%;margin-top:-26.5px;left:47.1883%;margin-left:-17.5px;width:35px;">
+			<p>6</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo g-aiAbs" style="top:94.3518%;left:48.7483%;margin-left:-41.25%;width:82.5%;">
+			<p>Fomento de la coherencia entre el ABP y todos los elementos del sistema educativo. </p>
+		</div>
+	</div>
+
+	<!-- Artboard: tablet -->
+	<div id="g-index-tablet" class="g-artboard" style="width:480px; height:2760.32191484298px;" data-aspect-ratio="0.174" data-min-width="480" data-max-width="768">
+		<img id="g-index-tablet-img" class="g-aiImg" alt="" src="img/index-tablet.jpg">
+		<div id="movil-tablet" class="g-tag g-aiAbs g-aiPointText" style="top:0.4622%;margin-top:-9.8px;left:9.7468%;margin-left:-42px;width:84px;">
+			<p>#FECYTedu</p>
+		</div>
+		<div id="movil-tablet" class="g-titulo-general g-aiAbs" style="top:1.5216%;left:50%;margin-left:-46.6667%;width:93.3333%;">
+			<p>CÃ³mo fomentar el aprendizaje basado en proyectos (ABP) de forma efectiva</p>
+		</div>
+		<div id="movil-tablet" class="g-titulos g-aiAbs" style="top:6.05%;left:50%;margin-left:-41.6667%;width:83.3333%;">
+			<p>Una experiencia de aprendizaje es ABP cuando los objetivos de aprendizaje estÃ¡n ligados al desarrollo del proyecto y el alumnado…</p>
+		</div>
+		<div id="movil-tablet" class="g-titulos g-aiAbs" style="top:14.0563%;left:50%;margin-left:-35%;width:70%;">
+			<p>...se enfrenta a una pregunta vinculada a algÃºn fenÃ³meno real.</p>
+		</div>
+		<div id="movil-tablet" class="g-titulos g-aiAbs" style="top:20.5049%;left:48.3333%;margin-left:-33.3333%;width:66.6667%;">
+			<p>...realiza tareas usualmente complejas de forma colaborativa, con autonomÃ­a y poder de decisiÃ³n.</p>
+		</div>
+		<div id="movil-tablet" class="g-titulos g-aiAbs" style="top:28.0402%;left:50%;margin-left:-35%;width:70%;">
+			<p>...reflexiona e intenta responder a la cuestiÃ³n inicial.</p>
+		</div>
+		<div id="movil-tablet" class="g-titulos g-aiAbs" style="top:35.8654%;left:50%;margin-left:-40%;width:80%;">
+			<p>...presenta sus propias conclusiones en forma de producto.</p>
+		</div>
+		<div id="movil-tablet" class="g-seccion g-aiAbs" style="top:39.3795%;left:49.3255%;margin-left:-25.8333%;width:51.6667%;">
+			<p>¿QuÃ© pruebas* aporta la investigaciÃ³n sobre la efectividad del ABP?</p>
+		</div>
+		<div id="movil-tablet" class="g-titulos-izquierda g-aiAbs" style="top:45.4657%;right:55.6753%;width:15%;">
+			<p>Lo que sabemos</p>
+		</div>
+		<div id="movil-tablet" class="g-titulos-derecha g-aiAbs" style="top:45.4657%;left:54.515%;width:16.6667%;">
+			<p>Lo que no sabemos... ¡aÃºn!</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo-d g-aiAbs" style="top:47.7118%;left:54.515%;width:33.75%;">
+			<p>No sabemos si el alumnado en desventaja se beneficia del ABP igual que el resto.</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo-d g-aiAbs" style="top:50.1391%;left:54.3247%;width:35.625%;">
+			<p>No sabemos si existe un efecto diferente en funciÃ³n del gÃ©nero del alumnado.</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo-i g-aiAbs" style="top:52.4576%;right:55.625%;width:37.7083%;">
+			<p>Los resultados del ABP en cuanto al rendimiento acadÃ©mico son mejores en Ã¡reas lingÃ¼Ã­sticas y humanÃ­sticas que en Ã¡reas STEM.</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo-i g-aiAbs" style="top:55.9355%;right:55.625%;width:37.7083%;">
+			<p>El ABP puede mejorar el rendimiento acadÃ©mico en primaria, secundaria y educaciÃ³n superior...</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo-d g-aiAbs" style="top:55.9355%;left:54.3247%;width:27.2917%;">
+			<p>…pero la investigaciÃ³n en educaciÃ³n infantil es muy incipiente.</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo-d g-aiAbs" style="top:59.1235%;left:54.3247%;width:35.625%;">
+			<p>… pero estÃ¡ por determinar en la motivaciÃ³n o adquisiciÃ³n de competencias transversales, como la creatividad o el pensamiento crÃ­tico.</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo-i g-aiAbs" style="top:59.1598%;right:55.625%;width:37.7083%;">
+			<p>La potencialidad del ABP se ha constatado en el aprendizaje de contenidos y en la satisfacciÃ³n del alumnado...</p>
+		</div>
+		<div id="movil-tablet" class="g-asterisco g-aiAbs" style="top:63.4346%;left:6.6667%;width:57.0833%;">
+			<p>*La evidencia disponible es limitada; a veces mixta o contradictoria y con limitaciones metodolÃ³gicas. </p>
+		</div>
+		<div id="movil-tablet" class="g-seccion g-aiAbs" style="top:67.1299%;left:49.3255%;margin-left:-25.8333%;width:51.6667%;">
+			<p>La efectividad del ABP depende fuertemente de sus condiciones de aplicaciÃ³n</p>
+		</div>
+		<div id="movil-tablet" class="g-subtitulos g-aiAbs g-aiPointText" style="top:69.8698%;margin-top:-9.6px;left:50.0918%;margin-left:-81px;width:162px;">
+			<p>ALGUNOS ASPECTOS CLAVE:</p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:71.6046%;margin-top:-26.5px;left:48.7147%;margin-left:-17.5px;width:35px;">
+			<p>1</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo g-aiAbs" style="top:71.9119%;left:50%;margin-left:-40.8333%;width:81.6667%;">
+			<p><span>Las experiencias de ABP con mejor resultado son intensivas, pero ocasionales y acotadas en el tiempo.</span> Ej.: mÃ¡s de 2 horas/semana durante 6-8 semanas. Tiempo para preparar y planificar, abordar las tareas, reflexionar y evaluar su aprendizaje. </p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:76.2417%;margin-top:-26.5px;left:48.7147%;margin-left:-17.5px;width:35px;">
+			<p>2</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo g-aiAbs" style="top:76.5128%;left:50%;margin-left:-40.8333%;width:81.6667%;">
+			<p>El ABP debe complementar y ampliar la instrucciÃ³n del profesorado, no sustituirla. <span class="g-cstyle1">El alumnado necesita ayuda, supervisiÃ³n y retroalimentaciÃ³n personalizada.</span></p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:80.1181%;margin-top:-26.5px;left:48.7147%;margin-left:-17.5px;width:35px;">
+			<p>3</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo g-aiAbs" style="top:80.4254%;left:49.1667%;margin-left:-44.1667%;width:88.3333%;">
+			<p><span>El alumnado desaventajado requiere de un estrecho seguimiento, una conexiÃ³n del proyecto con aspectos de su entorno y con elementos trabajados anteriormente, coherencia curricular e integraciÃ³n interdisciplinar, y una estructuraciÃ³n del tiempo clara.</span></p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:84.7552%;margin-top:-26.5px;left:48.7147%;margin-left:-17.5px;width:35px;">
+			<p>4</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo g-aiAbs" style="top:85.0625%;left:50%;margin-left:-43.3333%;width:86.6667%;">
+			<p>El ABP requiere de un liderazgo claro a nivel de centro que facilite el trabajo conjunto y la colaboraciÃ³n entre el profesorado. <span class="g-cstyle1">Ej. espacios compartidos entre docentes, gestionar horarios y espacios con direcciÃ³n, etc.</span></p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:88.8127%;margin-top:-26.5px;left:48.7147%;margin-left:-17.5px;width:35px;">
+			<p>5</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo g-aiAbs" style="top:89.12%;left:50%;margin-left:-40.8333%;width:81.6667%;">
+			<p><span>FormaciÃ³n especÃ­fica del profesorado</span> para compartir ideas clave, materiales o realizar observaciones de otras experiencias efectivas.</p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:92.3268%;margin-top:-26.5px;left:48.7147%;margin-left:-17.5px;width:35px;">
+			<p>6</p>
+		</div>
+		<div id="movil-tablet" class="g-parrafo g-aiAbs" style="top:92.5979%;left:51.0423%;margin-left:-31.4583%;width:62.9167%;">
+			<p><span>Fomento de la coherencia entre el ABP y todos los elementos del sistema educativo.<span class="g-cstyle1"> </span></span></p>
+		</div>
+	</div>
+
+	<!-- Artboard: laptop -->
+	<div id="g-index-laptop" class="g-artboard" style="width:769px; height:1575.77950106325px;" data-aspect-ratio="0.488" data-min-width="769" data-max-width="939">
+		<img id="g-index-laptop-img" class="g-aiImg" alt="" src="img/index-laptop.jpg">
+		<div id="laptop-desktop" class="g-tag g-aiAbs g-aiPointText" style="top:1.1591%;margin-top:-10.3px;left:9.5656%;margin-left:-63px;width:126px;">
+			<p>#FECYTedu</p>
+		</div>
+		<div id="laptop-desktop" class="g-titulo-general g-aiAbs" style="top:3.4269%;left:49.975%;margin-left:-45.7737%;width:91.5475%;">
+			<p>CÃ³mo fomentar el aprendizaje basado en proyectos (ABP) de forma efectiva</p>
+		</div>
+		<div id="laptop-desktop" class="g-titulos g-aiAbs" style="top:9.7729%;left:48.9347%;margin-left:-35.3706%;width:70.7412%;">
+			<p>Una experiencia de aprendizaje es ABP cuando los objetivos de aprendizaje estÃ¡n ligados al desarrollo del proyecto y el alumnado…</p>
+		</div>
+		<div id="laptop-desktop" class="g-titulos g-aiAbs" style="top:23.5439%;left:11.4434%;margin-left:-10.4031%;width:20.8062%;">
+			<p>...se enfrenta a una pregunta vinculada a algÃºn fenÃ³meno real.</p>
+		</div>
+		<div id="laptop-desktop" class="g-titulos g-aiAbs" style="top:23.5439%;left:38.8816%;margin-left:-14.9545%;width:29.909%;">
+			<p>...realiza tareas usualmente complejas de forma colaborativa, con autonomÃ­a y poder de decisiÃ³n.</p>
+		</div>
+		<div id="laptop-desktop" class="g-titulos g-aiAbs" style="top:23.5439%;left:88.4265%;margin-left:-10.4031%;width:20.8062%;">
+			<p>...presenta sus propias conclusiones en forma de producto.</p>
+		</div>
+		<div id="laptop-desktop" class="g-titulos g-aiAbs" style="top:23.6074%;left:66.8402%;margin-left:-9.883%;width:19.7659%;">
+			<p>...reflexiona e intenta responder a la cuestiÃ³n inicial.</p>
+		</div>
+		<div id="laptop-desktop" class="g-seccion g-aiAbs" style="top:30.9053%;left:24.4473%;margin-left:-20.2861%;width:40.5722%;">
+			<p>¿QuÃ© pruebas* aporta la investigaciÃ³n sobre la efectividad del ABP?</p>
+		</div>
+		<div id="laptop-desktop" class="g-seccion g-aiAbs" style="top:30.9053%;left:74.3823%;margin-left:-21.3264%;width:42.6528%;">
+			<p>La efectividad del ABP depende fuertemente de sus condiciones de aplicaciÃ³n</p>
+		</div>
+		<div id="laptop-desktop" class="g-subtitulos g-aiAbs g-aiPointText" style="top:37.5454%;margin-top:-9.6px;left:74.9599%;margin-left:-81px;width:162px;">
+			<p>ALGUNOS ASPECTOS CLAVE:</p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:40.9015%;margin-top:-26.5px;left:74.3633%;margin-left:-17.5px;width:35px;">
+			<p>1</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo g-aiAbs" style="top:41.4398%;left:74.9025%;margin-left:-21.8466%;width:43.6931%;">
+			<p><span>Las experiencias de ABP con mejor resultado son intensivas, pero ocasionales y acotadas en el tiempo. </span>Ej.: mÃ¡s de 2 horas/semana durante 6-8 semanas. Tiempo para preparar y planificar, abordar las tareas, reflexionar y evaluar su aprendizaje. </p>
+		</div>
+		<div id="laptop-desktop" class="g-titulos-izquierda g-aiAbs" style="top:42.8994%;right:78.1534%;width:9.3628%;">
+			<p>Lo que sabemos</p>
+		</div>
+		<div id="laptop-desktop" class="g-titulos-derecha g-aiAbs" style="top:42.8994%;left:28.2072%;width:10.4031%;">
+			<p>Lo que no sabemos... ¡aÃºn!</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo-d g-aiAbs" style="top:47.8493%;left:28.2072%;width:18.5956%;">
+			<p>No sabemos si el alumnado en desventaja se beneficia del ABP igual que el resto.</p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:50.0398%;margin-top:-26.5px;left:74.3633%;margin-left:-17.5px;width:35px;">
+			<p>2</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo g-aiAbs" style="top:50.5781%;left:74.3823%;margin-left:-20.2861%;width:40.5722%;">
+			<p>El ABP debe complementar y ampliar la instrucciÃ³n del profesorado, no sustituirla.<span class="g-cstyle1"> </span><span class="g-cstyle1">El alumnado necesita ayuda, supervisiÃ³n y retroalimentaciÃ³n personalizada.</span></p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo-d g-aiAbs" style="top:55.2108%;left:28.0884%;width:17.6853%;">
+			<p>No sabemos si existe un efecto diferente en funciÃ³n del gÃ©nero del alumnado.</p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:58.2263%;margin-top:-26.5px;left:74.3633%;margin-left:-17.5px;width:35px;">
+			<p>3</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo g-aiAbs" style="top:58.7646%;left:74.3823%;margin-left:-20.2861%;width:40.5722%;">
+			<p><span>El alumnado desaventajado requiere de un estrecho seguimiento, una conexiÃ³n del proyecto con aspectos de su entorno y con elementos trabajados anteriormente, coherencia curricular e integraciÃ³n interdisciplinar, y una estructuraciÃ³n del tiempo clara.&gt;
+		</span></p></div>
+		<div id="laptop-desktop" class="g-parrafo-i g-aiAbs" style="top:61.0492%;right:78.1534%;width:18.7256%;">
+			<p>Los resultados del ABP en cuanto al rendimiento acadÃ©mico son mejores en Ã¡reas lingÃ¼Ã­sticas y humanÃ­sticas que en Ã¡reas STEM.</p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:68.7607%;margin-top:-26.5px;left:74.3633%;margin-left:-17.5px;width:35px;">
+			<p>4</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo g-aiAbs" style="top:69.3625%;left:74.3823%;margin-left:-20.2861%;width:40.5722%;">
+			<p>El ABP requiere de un liderazgo claro a nivel de centro que facilite el trabajo conjunto y la colaboraciÃ³n entre el profesorado.<span class="g-cstyle1"> Ej. espacios compartidos entre docentes, gestionar horarios y espacios con direcciÃ³n, etc.</span></p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo-i g-aiAbs" style="top:70.949%;right:78.1534%;width:18.7256%;">
+			<p>El ABP puede mejorar el rendimiento acadÃ©mico en primaria, secundaria y educaciÃ³n superior...</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo-d g-aiAbs" style="top:70.949%;left:28.0884%;width:16.645%;">
+			<p>…pero la investigaciÃ³n en educaciÃ³n infantil es muy incipiente.</p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:78.026%;margin-top:-26.5px;left:74.3633%;margin-left:-17.5px;width:35px;">
+			<p>5</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo-d g-aiAbs" style="top:78.5643%;left:28.0884%;width:18.7256%;">
+			<p>… pero estÃ¡ por determinar en la motivaciÃ³n o adquisiciÃ³n de competencias transversales, como la creatividad o el pensamiento crÃ­tico.</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo-i g-aiAbs" style="top:78.6278%;right:78.1534%;width:18.7256%;">
+			<p>La potencialidad del ABP se ha constatado en el aprendizaje de contenidos y en la satisfacciÃ³n del alumnado...</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo g-aiAbs" style="top:78.5643%;left:74.3823%;margin-left:-20.2861%;width:40.5722%;">
+			<p><span>FormaciÃ³n especÃ­fica del profesorado</span>para compartir ideas clave, materiales o realizar observaciones de otras experiencias efectivas.</p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:85.0701%;margin-top:-26.5px;left:74.3633%;margin-left:-17.5px;width:35px;">
+			<p>6</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo g-aiAbs" style="top:85.6084%;left:74.9025%;margin-left:-18.7256%;width:37.4512%;">
+			<p><span>Fomento de la coherencia entre el ABP y todos los elementos del sistema educativo.</span></p>
+		</div>
+		<div id="laptop-desktop" class="g-asterisco g-aiAbs" style="top:89.0988%;left:3.1209%;width:35.6307%;">
+			<p>*La evidencia disponible es limitada; a veces mixta o contradictoria y con limitaciones metodolÃ³gicas. </p>
+		</div>
+	</div>
+
+	<!-- Artboard: desktop -->
+	<div id="g-index-desktop" class="g-artboard" style="width:940px; height:1559.85714285715px;" data-aspect-ratio="0.603" data-min-width="940">
+
+		<img id="g-index-desktop-img" class="g-aiImg" alt="" src="img/index-desktop.jpg">
+		<div id="laptop-desktop" class="g-tag g-aiAbs g-aiPointText" style="top:1.1709%;margin-top:-10.3px;left:7.3727%;margin-left:-63px;width:126px;">
+			<p>#FECYTedu</p>
+		</div>
+		<div id="laptop-desktop" class="g-titulo-general g-aiAbs" style="top:3.7824%;left:50.1764%;margin-left:-37.4468%;width:74.8936%;">
+			<p>CÃ³mo fomentar el aprendizaje basado en proyectos (ABP) de forma efectiva</p>
+		</div>
+		<div id="laptop-desktop" class="g-titulos g-aiAbs" style="top:10.1932%;left:49.3254%;margin-left:-28.9362%;width:57.8723%;">
+			<p>Una experiencia de aprendizaje es ABP cuando los objetivos de aprendizaje estÃ¡n ligados al desarrollo del proyecto y el alumnado…</p>
+		</div>
+		<div id="laptop-desktop" class="g-titulos g-aiAbs" style="top:26.0921%;left:12.3828%;margin-left:-7.6596%;width:15.3191%;">
+			<p>...se enfrenta a una pregunta vinculada a algÃºn fenÃ³meno real.</p>
+		</div>
+		<div id="laptop-desktop" class="g-titulos g-aiAbs" style="top:26.0921%;left:41.4141%;margin-left:-12.2872%;width:24.5745%;">
+			<p>...realiza tareas usualmente complejas de forma colaborativa, con autonomÃ­a y poder de decisiÃ³n.</p>
+		</div>
+		<div id="laptop-desktop" class="g-titulos g-aiAbs" style="top:26.0921%;left:86.7083%;margin-left:-7.6596%;width:15.3191%;">
+			<p>...presenta sus propias conclusiones en forma de producto.</p>
+		</div>
+		<div id="laptop-desktop" class="g-titulos g-aiAbs" style="top:26.0921%;left:67.057%;margin-left:-7.4468%;width:14.8936%;">
+			<p>...reflexiona e intenta responder a la cuestiÃ³n inicial.</p>
+		</div>
+		<div id="laptop-desktop" class="g-seccion g-aiAbs" style="top:33.3364%;left:24.7549%;margin-left:-19.5745%;width:39.1489%;">
+			<p>¿QuÃ© pruebas* aporta la investigaciÃ³n sobre la efectividad del ABP?</p>
+		</div>
+		<div id="laptop-desktop" class="g-seccion g-aiAbs" style="top:33.3364%;left:74.2189%;margin-left:-17.8723%;width:35.7447%;">
+			<p>La efectividad del ABP depende fuertemente de sus condiciones de aplicaciÃ³n</p>
+		</div>
+		<div id="laptop-desktop" class="g-subtitulos g-aiAbs g-aiPointText" style="top:39.9801%;margin-top:-9.6px;left:74.2658%;margin-left:-81px;width:162px;">
+			<p>ALGUNOS ASPECTOS CLAVE:</p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:43.3064%;margin-top:-26.5px;left:73.7597%;margin-left:-17.5px;width:35px;">
+			<p>1</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo g-aiAbs" style="top:43.8502%;left:74.006%;margin-left:-22.0213%;width:44.0426%;">
+			<p><span>Las experiencias de ABP con mejor resultado son intensivas, pero ocasionales y acotadas en el tiempo. </span>Ej.: mÃ¡s de 2 horas/semana durante 6-8 semanas. Tiempo para preparar y planificar, abordar las tareas, reflexionar y evaluar su aprendizaje. </p>
+		</div>
+		<div id="laptop-desktop" class="g-titulos-izquierda g-aiAbs" style="top:45.7093%;right:76.9473%;width:7.6596%;">
+			<p>Lo que sabemos</p>
+		</div>
+		<div id="laptop-desktop" class="g-titulos-derecha g-aiAbs" style="top:45.7093%;left:28.2563%;width:8.5106%;">
+			<p>Lo que no sabemos... ¡aÃºn!</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo-d g-aiAbs" style="top:50.3251%;left:28.2563%;width:18.617%;">
+			<p>No sabemos si el alumnado en desventaja se beneficia del ABP igual que el resto.</p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:52.0251%;margin-top:-26.5px;left:73.7597%;margin-left:-17.5px;width:35px;">
+			<p>2</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo g-aiAbs" style="top:52.5689%;left:74.2189%;margin-left:-20.4255%;width:40.8511%;">
+			<p>El ABP debe complementar y ampliar la instrucciÃ³n del profesorado, no sustituirla. <span>El alumnado necesita ayuda, supervisiÃ³n y retroalimentaciÃ³n personalizada.</span></p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo-d g-aiAbs" style="top:55.582%;left:28.1591%;width:17.8723%;">
+			<p>No sabemos si existe un efecto diferente en funciÃ³n del gÃ©nero del alumnado.</p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:59.7181%;margin-top:-26.5px;left:73.7597%;margin-left:-17.5px;width:35px;">
+			<p>3</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo g-aiAbs" style="top:60.2619%;left:74.2189%;margin-left:-20.4255%;width:40.8511%;">
+			<p><span>El alumnado desaventajado requiere de un estrecho seguimiento, una conexiÃ³n del proyecto con aspectos de su entorno y con elementos trabajados anteriormente, coherencia curricular e integraciÃ³n interdisciplinar, y una estructuraciÃ³n del tiempo clara.</span></p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo-i g-aiAbs" style="top:61.48%;right:76.9473%;width:20.4255%;">
+			<p>Los resultados del ABP en cuanto al rendimiento acadÃ©mico son mejores en Ã¡reas lingÃ¼Ã­sticas y humanÃ­sticas que en Ã¡reas STEM.</p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:69.4626%;margin-top:-26.5px;left:73.7597%;margin-left:-17.5px;width:35px;">
+			<p>4</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo-i g-aiAbs" style="top:70.968%;right:76.9473%;width:20.4255%;">
+			<p>El ABP puede mejorar el rendimiento acadÃ©mico en primaria, secundaria y educaciÃ³n superior...</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo-d g-aiAbs" style="top:70.968%;left:28.1591%;width:17.0213%;">
+			<p>…pero la investigaciÃ³n en educaciÃ³n infantil es muy incipiente.</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo g-aiAbs" style="top:70.0064%;left:74.2189%;margin-left:-20.4255%;width:40.8511%;">
+			<p>El ABP requiere de un liderazgo claro a nivel de centro que facilite el trabajo conjunto y la colaboraciÃ³n entre el profesorado. <span class="g-cstyle1">Ej. espacios compartidos entre docentes, gestionar horarios y espacios con direcciÃ³n, etc.</span></p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:78.1814%;margin-top:-26.5px;left:73.7597%;margin-left:-17.5px;width:35px;">
+			<p>5</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo-d g-aiAbs" style="top:78.02%;left:28.1591%;width:18.7234%;">
+			<p>… pero estÃ¡ por determinar en la motivaciÃ³n o adquisiciÃ³n de competencias transversales, como la creatividad o el pensamiento crÃ­tico.</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo-i g-aiAbs" style="top:78.0841%;right:76.9473%;width:17.0213%;">
+			<p>La potencialidad del ABP se ha constatado en el aprendizaje de contenidos y en la satisfacciÃ³n del alumnado...</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo g-aiAbs" style="top:78.7252%;left:74.2189%;margin-left:-20.4255%;width:40.8511%;">
+			<p><span>FormaciÃ³n especÃ­fica del profesorado </span>para compartir ideas clave, materiales o realizar observaciones de otras experiencias efectivas.</p>
+		</div>
+		<div id="laptop-desktop" class="g-numeros g-aiAbs g-aiPointText" style="top:85.8744%;margin-top:-26.5px;left:73.7597%;margin-left:-17.5px;width:35px;">
+			<p>6</p>
+		</div>
+		<div id="laptop-desktop" class="g-parrafo g-aiAbs" style="top:86.4182%;left:74.2189%;margin-left:-15.3191%;width:30.6383%;">
+			<p><span>Fomento de la coherencia entre el ABP y todos los elementos del sistema educativo.</span></p>
+		</div>
+		<div id="laptop-desktop" class="g-asterisco g-aiAbs" style="top:88.5979%;left:4.128%;width:29.1489%;">
+			<p>*La evidencia disponible es limitada; a veces mixta o contradictoria y con limitaciones metodolÃ³gicas. </p>
+		</div>
+	</div>
+</div>
+<!-- Fin -->
+</body></html>
